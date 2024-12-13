@@ -67,7 +67,7 @@ const ProductList: React.FC = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchTerm]);
+  }, [searchTerm, showFavorites, selectedCategory]);
 
   const categories = ["all", ...new Set(products.map(product => product.category))];
 
